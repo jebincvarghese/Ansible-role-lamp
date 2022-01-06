@@ -17,14 +17,10 @@ A basic LAMP stack environment that creates an environment for wordpress website
 
 ```
 mariadbroot_pw: "mysqlpass123" #-------database root password-------#
-db_name: "wordpress"  #-------Wordpress database name-------#
-db_user: "wordpress"  #-------WordPress username-------#
-db_password: "wordpress"  #-------WordPress db password-------#
-httpd_port: 80  #-------port for apache-------#
-httpd_user: "apache" #-------apache user-------#
-httpd_group: "apache"  #-------apache group-------#
-domain_name: "wordpress.freeda-francis.tech"  #-------domain name-------#
-wp_url: "https://wordpress.org/latest.tar.gz"  #-------WordPress download URL-------#
+wp_username: wordpress
+wp_password: wordpress
+wp_database: wordpress
+
 ```
 
 ## Features
