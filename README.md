@@ -1,4 +1,4 @@
-# ansible-role-lamp
+# Ansible-role-lamp
 
 A basic LAMP stack environment that creates an environment for wordpress websites which is built using ansible roles. It consists of the following:
 
@@ -16,10 +16,15 @@ A basic LAMP stack environment that creates an environment for wordpress website
 ## Variables Used
 
 ```
-mariadbroot_pw: "mysqlpass123" #-------database root password-------#
-wp_username: wordpress
-wp_password: wordpress
-wp_database: wordpress
+    domain_name: blog.jebincvarghese.xyz
+    httpd_port: 80
+    httpd_owner: apache
+    httpd_group: apache
+    mysql_root_password: root@123
+    wp_username: wordpress
+    wp_password: wordpress
+    wp_database: wordpress
+
 
 ```
 
