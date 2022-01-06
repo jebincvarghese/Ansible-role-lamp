@@ -5,7 +5,7 @@ A basic LAMP stack environment that creates an environment for wordpress website
 - Apache Webserver
 - PHP 7.4
 - MariaDB server
-- Wordpress (latest)
+- Wordpress 
 
 ## Prerequisites
 
