@@ -54,7 +54,4 @@ Once the above steps has been completed, your wordpress will be ready in the spe
 
 ## Result
 
-![image](https://user-images.githubusercontent.com/93197553/148401422-ba429dd4-e174-47a8-809c-1dba722b323f.png)
-
-![image](https://user-images.githubusercontent.com/93197553/148401513-251515ab-fd95-416f-b8fa-7a57b203e302.png)
 
