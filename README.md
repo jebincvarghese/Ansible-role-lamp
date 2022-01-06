@@ -1,7 +1,5 @@
 # ansible-role-lamp
 
-# lamp-wordpress-roles
-
 A basic LAMP stack environment that creates an environment for wordpress websites which is built using ansible roles. It consists of the following:
 
 - Apache Webserver
