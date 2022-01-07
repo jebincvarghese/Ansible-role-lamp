@@ -1,51 +1,41 @@
 # Ansible-role-lamp
 
-A basic LAMP stack environment that creates an environment for wordpress websites which is built using ansible roles. It consists of the following:
+
+## STACK
+
 
 - Apache Webserver
-- PHP 7.4
-- MariaDB server
-- Wordpress 
+- php7.4
+- Mariadb-database-server
+
 
 ## Prerequisites
 
-- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
-- Ansible-galaxy
-- SSH and key-based authentication from the ansible machine to the remote server.
 
-## Variables Used
+- Latest ansible version installed.
+
+
+## Hosts
+
+
+- Add hosts in an inventory file(say hosts) under your working directory.
+
+
+## Configuration
+
+- Configuration of variables for both apache mariadb(domain_name,mariadb_root_password,database_name,database_username,database_user_password) are included in the main.yml file the vars section, which can be modified as per the requirement.
+
+## Setup
+
+To check if the playbook have any syntax error, run:
+```
+ansible-playbook -i inventory_file wordpress.yml --syntax-check
+```
+
+## Running playbook
 
 ```
-    domain_name: blog.jebincvarghese.xyz
-    httpd_port: 80
-    httpd_owner: apache
-    httpd_group: apache
-    mysql_root_password: root@123
-    wp_username: wordpress
-    wp_password: wordpress
-    wp_database: wordpress
-
-
-```
-
-## Features
-
-In this demo, we will be making use of 2 ansible roles - LAMP & WordPress. 
-- LAMP : In lamp role, we will be installing and configuring Apache, MySQL, PHP and its required dependencies.
-- WordPress : In wordpress role, we will downloading the latest wordpress, extracting its contents and setting up the custom wp-config.php file to complete its installation.
-
-## Usage
-
-1. Initially, create 2 roles - lamp & wordpress in the roles_path using the below command
-```
-ansible-galaxy init lamp
-ansible-galaxy init wordpress
-```
-2. Get the contents of the roles - lamp & wordpress and place them in location 'roles_path' specified in the ansible config file (ansible.cfg).
-
-3. Then, you can run the main.yml playbook using the command
-```
-ansible-playbook -i inventory main.yml
+ansible-playbook -i inventory_file wordpress.yml 
 ```
 
 Once the above steps has been completed, your wordpress will be ready in the specified domain name.
