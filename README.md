@@ -23,7 +23,7 @@
 
 ## Configuration
 
-- Configuration of variables for both apache mariadb(domain_name,mariadb_root_password,database_name,database_username,database_user_password) are included in the main.yml file the vars section, which can be modified as per the requirement.
+- Configuration of variables for both apache mariadb (domain_name,mariadb_root_password,database_name,database_username,database_user_password) are included in the main.yml file the vars section, which can be modified as per the requirement.
 
 ## Setup
 
